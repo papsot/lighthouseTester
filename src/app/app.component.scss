@@ -1,0 +1,87 @@
+.content {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 30px;
+  min-width: 800px;
+
+  .button-container {
+    display: flex;
+    align-items: center;
+
+    .download-btn {
+      margin-left: 20px;
+    }
+  }
+
+  .hint {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+
+  section {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .options {
+    align-self: center;
+    margin-left: 50px;
+  }
+
+  .inputs {
+
+    &.unique {
+      align-self: center;
+    }
+  }
+
+  .results {
+    margin: 50px 0px 200px;
+
+    table {
+      width: 100%;
+
+      th {
+        background: #eee;
+      }
+
+      td:not(:last-child), th:not(:last-child) {
+        border-right: 1px solid #eee;
+      }
+
+      td:not(:first-child), th:not(:first-child) {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .loading-spinner {
+    display: inline-block;
+    margin-left: 40px;
+  }
+}
+
+.lighthouse {
+
+  textarea {
+    padding-left: 10px;
+
+    &:focus {
+      
+      .mat-form-field-flex {
+        background: #eee;
+      }
+    }
+
+
+    .mat-form-field-flex:focus {
+      background: #eee;
+    }
+  }
+}
+
+.half-width {
+  width: 50%;
+  min-width: 600px;
+}
